@@ -1,0 +1,334 @@
+.link_description1 .speed {
+  background-color: #70603e;
+}
+.link_description2 .speed {
+  background-color: #0075d9;
+}
+.link_description3 .speed {
+  background-color: #e74807;
+}
+.link_description4 .speed {
+  background-color: #0075d9;
+}
+.link_description5 .speed {
+  background-color: #e74807;
+}
+body {
+  font-family: Verdana;
+  height: 100%;
+  background-color: #efeff4;
+  margin: auto;
+  margin-top: 0;
+  padding: 0;
+}
+body .icon {
+  height: 20px;
+  padding: 20px;
+}
+body a {
+  text-decoration: none;
+}
+body ul {
+  padding: 0;
+}
+body li {
+  list-style: none;
+}
+body .info_title {
+  align-items: center;
+  display: flex;
+  height: 44px;
+  color: #88c436;
+  width: 100%;
+}
+body .content .list_tarifs {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  body .content .list_tarifs {
+    flex-direction: column;
+  }
+}
+body .content .list_tarifs .block_list:nth-child(3n+3) {
+  margin: 0 0 10px 0;
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  body .content .list_tarifs .block_list:nth-child(3n+3) {
+    margin: 0 10px 10px 0;
+  }
+}
+@media (max-width: 640px) {
+  body .content .list_tarifs .block_list:nth-child(3n+3) {
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+body .content .list_tarifs .block_list {
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 15px;
+  background-color: white;
+  margin: 0 10px 10px 0;
+  display: flex;
+  width: 32%;
+  border: 1px solid #d4d4d7;
+}
+body .content .list_tarifs .block_list .link_description {
+  border-top: 1px solid gray;
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  body .content .list_tarifs .block_list {
+    width: 48%;
+    position: relative;
+  }
+}
+@media (max-width: 640px) {
+  body .content .list_tarifs .block_list {
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    height: calc(60%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  body .content .list_tarifs .block_list .icon_next img {
+    width: 12px;
+    height: 12px;
+  }
+}
+body .content .list_tarifs .block_list .name_tarif {
+  margin: 5px 0 5px 0;
+}
+body .content .list_tarifs .block_list .icon_next {
+  position: absolute;
+  right: 13px;
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  body .content .list_tarifs .block_list .icon_next {
+    display: list-item;
+  }
+}
+@media (max-width: 640px) {
+  body .content .list_tarifs .block_list .icon_next {
+    display: list-item;
+  }
+}
+body .content .list_tarifs .block_list .link_description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid gray;
+}
+body .content .list_tarifs .block_list .link_description:hover .icon_next {
+  right: 8px;
+}
+body .content .list_tarifs .block_list .b_description_list_tarif {
+  border-bottom: 1px solid gray;
+}
+@media (max-width: 640px) {
+  body .content .list_tarifs .block_list .b_description_list_tarif {
+    margin: 10px 0 10px 0;
+    border-bottom: none;
+    height: auto;
+  }
+}
+body .content .list_tarifs .block_list .b_description_list_tarif .speed {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 10px 8px 15px;
+  margin-left: -15px;
+  color: white;
+}
+body .content .list_tarifs .block_list .b_description_list_tarif .price {
+  margin: 5px 0 5px 5px;
+  color: #505a60;
+}
+body .content .list_tarifs .block_list .b_description_list_tarif .options {
+  margin: 5px 0 5px 5px;
+  color: #d4d4d7;
+}
+body .content .list_tarifs .block_list .b_description_list_tarif .options .list_options {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  body .content .list_tarifs .block_list .b_description_list_tarif .options {
+    border-bottom: none;
+  }
+}
+@media (max-width: 640px) {
+  body .content .list_tarifs .block_list .b_description_list_tarif .options {
+    border-bottom: 1px solid gray;
+  }
+}
+body .content .list_tarifs .block_list .b_link_about {
+  height: 44px;
+  margin: 10px 0 0 5px;
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  body .content .list_tarifs .block_list .b_link_about {
+    width: 375px;
+  }
+}
+body .content .list_tarifs .block_list .b_link_about .link_about {
+  color: #047cff;
+}
+@media (max-width: 640px) {
+  body .content .list_tarifs .block_list .b_link_about .link_about {
+    width: 375px;
+  }
+}
+.btn_go_back {
+  background-color: #f7f7f8;
+  height: 50px;
+  display: flex;
+  padding: 0;
+  margin-bottom: 35px;
+  position: relative;
+  align-items: center;
+  border: 1px solid #d4d4d7;
+}
+.btn_go_back img {
+  width: 12px;
+  height: 12px;
+}
+.btn_go_back .name_tarif_period {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+.btn_go_back:hover .icon {
+  position: relative;
+  right: 5px;
+}
+img {
+  width: 12px;
+  height: 12px;
+}
+.price_inform {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+}
+.price_inform .inform_about_price {
+  margin-bottom: 20px;
+  background-color: white;
+  padding-left: 15px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border: 1px solid #d4d4d7;
+}
+.price_inform .inform_about_price .link_price {
+  margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
+  border-top: 1px solid gray;
+  flex-direction: column;
+}
+.price_inform .inform_about_price .link_price:hover .icon_next {
+  right: 2px;
+}
+.price_inform .inform_about_price .icon_next {
+  position: absolute;
+  right: 5px;
+}
+.price_inform .inform_about_price .icon_next img {
+  width: 12px;
+  height: 12px;
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .price_inform .inform_about_price {
+    width: 47%;
+  }
+}
+@media (max-width: 640px) {
+  .price_inform .inform_about_price {
+    width: 100%;
+  }
+  .price_inform .inform_about_price .icon_next {
+    position: absolute;
+  }
+}
+.price_inform .inform_about_price .title {
+  color: #88c436;
+  width: 100%;
+}
+.price_inform .inform_about_price .price {
+  margin-top: 12px;
+  margin-bottom: 18px;
+  color: #505a60;
+}
+.price_inform .inform_about_price .price_period {
+  color: #d4d4d7;
+}
+.price_inform .inform_about_price .discount {
+  color: #d4d4d7;
+}
+.price_list_now_tarif {
+  border: 1px solid #d4d4d7;
+}
+.price_list_now_tarif .list_price_tarif {
+  padding-left: 20px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price_list_now_tarif .list_price_tarif .icon_next {
+  right: 25px;
+  position: absolute;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay {
+  padding-bottom: 10px;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .period {
+  padding-top: 15px;
+  border-top: 1px solid gray;
+  color: #4d575d;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .price {
+  margin-bottom: 20px;
+  color: #4d575d;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .price_period {
+  color: #4d575d;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .check {
+  margin-bottom: 20px;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .up_to {
+  color: #acacac;
+}
+.price_list_now_tarif .list_price_tarif .btn_select {
+  display: flex;
+  border-top: 1px solid gray;
+  justify-content: center;
+}
+.price_list_now_tarif .list_price_tarif .btn_select button {
+  margin: 10px;
+  margin-left: 0px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: #88c436;
+  color: white;
+}

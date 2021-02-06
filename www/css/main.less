@@ -1,0 +1,225 @@
+.speed {
+  .link_description1 & {
+    background-color: #70603e;
+  }
+  .link_description2 & {
+    background-color: #0075d9;
+  }
+  .link_description3 & {
+    background-color: #e74807;
+  }
+  .link_description4 & {
+    background-color: #0075d9;
+  }
+  .link_description5 & {
+    background-color: #e74807;
+  }
+}
+
+body {
+  font-family:Verdana;
+  height: 100%;
+  background-color: #efeff4;
+  margin: auto;
+  margin-top: 0;
+  padding: 0;
+
+  @margin-left: 5px;
+  @margin: 5px 0 5px 5px;
+  .icon {
+    height: 20px;
+    padding: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  .info_title {
+    align-items: center;
+    display: flex;
+    height: 44px;
+    color: #88c436;
+    width: 100%;
+  }
+  .content {
+
+    .list_tarifs {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      justify-content: center;
+      @media (min-width: 640px) and (max-width: 1023px ) {
+
+      }
+      @media (max-width: 640px) {
+        flex-direction: column;
+      }
+      .block_list:nth-child(3n+3) {
+        margin: 0 0 10px 0;
+        @media (min-width: 640px) and (max-width: 1023px ) {
+          margin: 0 10px 10px 0;
+        }
+        @media (max-width: 640px) {
+          flex-direction: column;
+          margin: auto;
+          margin-bottom: 30px;
+
+        }
+      }
+      .block_list {
+        position: relative;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 15px;
+        background-color: white;
+        margin: 0 10px 10px 0;
+        display: flex;
+        width: 32%;
+        border: 1px solid #d4d4d7;
+        .link_description {
+          border-top: 1px solid gray;
+        }
+
+
+        @media (min-width: 640px) and (max-width: 1023px ) {
+
+          width: 48%;
+          position: relative;
+
+        }
+        @media (max-width: 640px) {
+          flex-direction: column;
+          margin: auto;
+          margin-bottom: 30px;
+          width: 100%;
+          height: calc(100% - 40px);
+          position: relative;
+          display: flex;
+          justify-content: center;
+          .icon_next{
+            img {
+              width: 12px;
+              height: 12px;
+            }
+          }
+
+        }
+
+
+          .name_tarif {
+            margin: 5px 0 5px 0;
+            @media (max-width: 640px) {
+
+
+          }
+        }
+        .icon_next {
+          position: absolute;
+          right: 13px;
+          @media (min-width: 640px) and (max-width: 1023px ) {
+            display: list-item;
+          }
+          @media (max-width: 640px) {
+            display: list-item;
+          }
+
+        }
+        .link_description {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-top: 1px solid gray;
+        }
+        .link_description:hover .icon_next {
+
+          right: 8px;
+        }
+
+        .b_description_list_tarif {
+
+
+          border-bottom: 1px solid gray;
+
+          @media (min-width: 640px) and (max-width: 1023px ) {
+
+          }
+          @media (max-width: 640px) {
+            margin: 10px 0 10px 0;
+            border-bottom: none;
+            height: auto;
+          }
+          .speed {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 8px 10px 8px 15px;
+            margin-left: -15px;
+
+
+            color: white;
+            @media (min-width: 640px) and (max-width: 1023px ) {
+            }
+            @media (max-width: 640px) {
+
+            }
+          }
+
+          .price {
+            margin: @margin;
+
+            color: #505a60;
+            @media (max-width: 640px) {
+
+            }
+
+          }
+          .options {
+            margin: @margin;;
+
+            color: #d4d4d7;
+            .list_options {
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+            @media (min-width: 640px) and (max-width: 1023px ) {
+              border-bottom: none;
+            }
+
+            @media (max-width: 640px) {
+
+              border-bottom: 1px solid gray;
+            }
+          }
+        }
+        .b_link_about {
+          height: 44px;
+          margin: 10px 0 0 5px;
+          @media (min-width: 640px) and (max-width: 1023px ) {
+            width: 375px;
+          }
+
+          .link_about {
+            color: #047cff;
+            @media (max-width: 640px) {
+              width: 375px;
+
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@import "b_tarif";
+@import "b_period";

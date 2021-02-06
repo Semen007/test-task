@@ -1,0 +1,50 @@
+.price_list_now_tarif {
+  border: 1px solid #d4d4d7;
+}
+.price_list_now_tarif .list_price_tarif {
+  padding-left: 20px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price_list_now_tarif .list_price_tarif .icon_next {
+  right: 25px;
+  position: absolute;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay {
+  padding-bottom: 10px;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .period {
+  padding-top: 15px;
+  border-top: 1px solid gray;
+  color: #4d575d;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .price {
+  margin-bottom: 20px;
+  color: #4d575d;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .price_period {
+  color: #4d575d;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .check {
+  margin-bottom: 20px;
+}
+.price_list_now_tarif .list_price_tarif .b_period_pay .up_to {
+  color: #acacac;
+}
+.price_list_now_tarif .list_price_tarif .btn_select {
+  display: flex;
+  border-top: 1px solid gray;
+  justify-content: center;
+}
+.price_list_now_tarif .list_price_tarif .btn_select button {
+  margin: 10px;
+  margin-left: 0px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: #88c436;
+  color: white;
+}
